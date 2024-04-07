@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=Number(prompt("enter your number "))
+        let org
+        let rem=0
+        let total=0
+        org=num;
+        while(num!=0)
+        {
+            rem=num%10;
+            total=total+rem*rem*rem;
+            num=parseInt(num/10);
+        }
+        if(total==org)
+        {
+            document.write("armstrong",org)
+        }
+        else
+        {
+            document.write("not armstrong",org)
+        }
+    </script>
+</body>
+</html>

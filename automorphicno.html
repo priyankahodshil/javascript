@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let num=Number(prompt("enter your number "))
+         let count=1;
+         let square=0;
+           let org
+           org=num;
+         square=num*num
+          while(num!=0)
+          {
+            count=count*10;
+            num=parseInt(num/10);
+          }
+          if(square%count==org)
+          {
+            document.write("automorphic ",org);
+          }
+          else
+          {
+            document.write("not automorphic",org);
+          }
+    </script>
+</body>
+</html>
